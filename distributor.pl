@@ -6,6 +6,7 @@ main:-
     write('-------------------------------\n'),
     write('input exemple : \n200.\n\t=> 2euros\nCombien devez vous payer (centimes) ?\n'),
     read(AmountDue),
+    centChecker(AmountDue), % Contrôle si la donnée entrée par l'utilisateur est correcte
     write('-------------------------------\n'),
     % -----------------------------------------------------
 
@@ -14,6 +15,7 @@ main:-
     write(AmountDue),
     write('cent\ninput exemple : \n[0,1,1,0,0,0]. \n\t=> 1euro 50cent\nCombien de pieces avez vous rentrez ?\n'),
     read(PEntered),
+    piecesChecker(PEntered), % Contrôle si la donnée entrée par l'utilisateur est correcte
     write('-------------------------------\n'),
     % -----------------------------------------------------
 
@@ -34,6 +36,18 @@ main:-
 
     updatePieces(Pieces, PEntered, Solution, Lr), % On calcule la nouvelle quantité de chaque pièce (dans Lr)
     updateQuantities(Lr). % On met à jours la machine (le fichier quantities.txt)
+%------------------------------------------------------------------------------------------------------------------------
+
+% Controle si une variable contient bien un entier multiple de 5
+centChecker(Amount) :- 
+    integer(Amount),
+    Amount mod 5 =:= 0.
+%------------------------------------------------------------------------------------------------------------------------
+
+% Controle si une variable contient bien une liste de pièces
+piecesChecker(LP) :-
+    is_list(LP),
+    length(LP, 6).
 %------------------------------------------------------------------------------------------------------------------------
 
 % Permet d'obtenir le nombre de pièces disponible pour chaque type de pièce 

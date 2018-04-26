@@ -18,3 +18,5 @@ Le programme interagira  alors avec vous au travers du terminal, il vous demande
  ![utilisation_example](imgs/utilisation_example.jpg)     
 Le fichier _quantities.txt_ sera alors mis à jours :    
  ![final_quantities](imgs/final_quantities.jpg) 
+
+_(?) Pour plus d'informations sur le fonctionnement, reportez-vous directement à la documentation dans le code source._
