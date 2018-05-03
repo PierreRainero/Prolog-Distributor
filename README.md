@@ -7,7 +7,7 @@
 Ce projet est une solution et une extension du problème posé sur le site de [Christine Solnon](https://perso.liris.cnrs.fr/christine.solnon/Site-PPC/session6/e-miage-ppc-sess6.htm#exo_1).
 
 ## Distributeur automatique
-Il est fréquent d'utiliser un distributeur automatique (pour acheter des boissons ou de la nourriture par exemple), mais vous-êtes-vous déjà posé la question sur la manière dont est rendue la monnaie ? Il est fréquent que ces distributeurs arrivent à cours de certaines pièces car elles rendent par défaut le maximum de petites pièces par exemple.   
+On utilise régulièrement des distributeurs automatiques (pour acheter des boissons ou de la nourriture par exemple), mais vous-êtes-vous déjà posé la question sur la manière dont est rendue la monnaie ? Il est fréquent que ces distributeurs arrivent à cours de certaines pièces car elles rendent par défaut le maximum de petites pièces par exemple.   
 Ce projet a pour but de reproduire le mécanisme d'un monnayeur automatique et d’optimiser le choix des pièces en en rendant le moins possible.   
 Pour se faire, le projet s'appuie sur un langage de programmation logique, plus précisément par contraintes pour ce problème : **Prolog**. La quantité de pièces disponible dans le distributeur est mockée par le fichier _quantities.txt_ qui est construit sous la forme suivante :    
  ![initials_quantities](imgs/initials_quantities.jpg)      
